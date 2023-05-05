@@ -1,7 +1,12 @@
+import ImageShow from "./components/ImageList";
+import SearchBar from "./components/SearchBar";
+
 function App() {
   return (
     <div>
-      Reza Nikfal
+      <div>Reza Nikfal</div>
+      <SearchBar />
+      <ImageShow />
     </div>
   );
 }
