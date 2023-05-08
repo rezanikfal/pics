@@ -1,10 +1,10 @@
 import ImageShow from "./ImageShow";
 
-function ImageList() {
+function ImageList({ images }) {
+    const renderedImage = images.map(x => <ImageShow image={x} />)
     return (
         <div>
-            <div>Image List</div>
-            <ImageShow />
+            <div>{renderedImage}</div>
         </div>
     );
 }

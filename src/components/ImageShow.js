@@ -1,7 +1,7 @@
-function ImageShow() {
+function ImageShow({image}) {
     return (
         <div>
-            Image Show
+            {image.alt_description}
         </div>
     );
 }
