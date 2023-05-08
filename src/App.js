@@ -1,12 +1,18 @@
-import ImageShow from "./components/ImageList";
+import ImageList from "./components/ImageList";
 import SearchBar from "./components/SearchBar";
+import searchImages from "./api";
 
 function App() {
+
+  const handleSubmit = async (term) => {
+    await searchImages(term)
+  }
+
+
   return (
     <div>
-      <div>Reza Nikfal</div>
-      <SearchBar />
-      <ImageShow />
+      <SearchBar onSubmit={handleSubmit} />
+      <ImageList />
     </div>
   );
 }
